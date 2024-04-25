@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation</title>
+</head>
+<body>
+  <h1>Documentation otakudesu api by onesytex</h1>
+
+  <h2>API Path</h2>
+  <p><code>https://api-onesydesu.vercel.app/</code></p>
+
+  <h2>API Version</h2>
+  <p><code>v1.0</code></p>
+
+  <h2>All Ongoing Anime</h2>
+  <p>Get all ongoing anime</p>
+  <ul>
+    <li><code>[pageNumber]</code> = 1-3 (may change depending on the database)</li>
+    <li>Endpoint: <code>/api/v1/ongoing/[page]</code></li>
+    <li>Example: <a href="https://api-onesydesu.vercel.app/api/v1/ongoing/1">https://api-onesydesu.vercel.app/api/v1/ongoing/1</a></li>
+  </ul>
+
+  <h2>All Complete Anime</h2>
+  <p>Get all complete anime</p>
+  <ul>
+    <li><code>[page]</code> = 1-46 (may change depending on the database)</li>
+    <li>Endpoint: <code>/api/v1/completed/[page]</code></li>
+    <li>Example: <a href="https://api-onesydesu.vercel.app/api/v1/completed/1">https://api-onesydesu.vercel.app/api/v1/completed/1</a></li>
+  </ul>
+
+  <h2>Search Anime</h2>
+  <p>Search anime by title</p>
+  <ul>
+    <li><code>[q]</code> = any string</li>
+    <li>Endpoint: <code>/api/v1/search/[q]</code></li>
+    <li>Example: <a href="https://api-onesydesu.vercel.app/api/v1/search/black%20clover">https://api-onesydesu.vercel.app/api/v1/search/black%20clover</a></li>
+  </ul>
+
+  <h2>All Anime List</h2>
+  <p>Get all anime list</p>
+  <ul>
+    <li>Endpoint: <code>/api/v1/anime-list</code></li>
+    <li>Example: <a href="https://api-onesydesu.vercel.app/api/v1/anime-list">https://api-onesydesu.vercel.app/api/v1/anime-list</a></li>
+  </ul>
+
+  <h2>Anime Detail</h2>
+  <p>Get anime detail</p>
+  <ul>
+    <li><code>[endpoint]</code> : String</li>
+    <li>Endpoint: <code>/api/v1/detail/[endpoint]</code></li>
+    <li>Example: <a href="https://api-onesydesu.vercel.app/api/v1/detail/chaisaw-sub-indo">https://api-onesydesu.vercel.app/api/v1/detail/chaisaw-sub-indo</a></li>
+  </ul>
+
+  <h2>Batch Link</h2>
+  <p>Get batch link</p>
+  <ul>
+    <li><code>[endpoint]</code> : String</li>
+    <li>Endpoint: <code>/api/v1/batch/[endpoint]</code></li>
+    <li>Example: <a href="https://api-onesydesu.vercel.app/api/v1/batch/hakumao-s2-batch-sub-indo/">https://api-onesydesu.vercel.app/api/v1/batch/hakumao-s2-batch-sub-indo/</a></li>
+  </ul>
+
+  <h2>Genre List</h2>
+  <p>Get genre list</p>
+  <ul>
+    <li>Endpoint: <code>/api/v1/genres</code></li>
+    <li>Example: <a href="https://api-onesydesu.vercel.app/api/v1/genres">https://api-onesydesu.vercel.app/api/v1/genres</a></li>
+  </ul>
+
+  <h2>Genre Page</h2>
+  <p>Get anime by genre</p>
+  <ul>
+    <li><code>[genre]</code> : String</li>
+    <li><code>[page]</code> : 1 -... (depend on genre)</li>
+    <li>Endpoint: <code>/api/v1/genres/[genre]/[page]</code></li>
+    <li>Example: <a href="https://api-onesydesu.vercel.app/api/v1/genres/action/1">https://api-onesydesu.vercel.app/api/v1/genres/action/1</a></li>
+  </ul>
+</body>
+</html>

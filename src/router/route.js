@@ -1,7 +1,12 @@
 const router = require("express").Router()
 const route = router
 const Services = require("../controller/services")
+const path = require('path');
 
+
+router.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname, './src/router/index.html'));
+});
 
 route.get("/", (req, res) => {
     res.send({
