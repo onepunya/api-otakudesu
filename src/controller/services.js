@@ -2,7 +2,7 @@ const services = require("../helper/sevice")
 const cheerio = require("cheerio")
 const baseUrl = require("../constant/url")
 const episodeHelper = require("../helper/episodeHelper")
-
+const creator = "mr.one / github/onepunya"
 const Services = {
     getOngoing: async (req, res) => {
         const page = req.params.page
@@ -35,6 +35,7 @@ const Services = {
                 return res.status(200).json({
                     status: true,
                     message: "success",
+                    creator: creator,
                     ongoing,
                     currentPage: page
                 })
@@ -85,6 +86,7 @@ const Services = {
                 return res.status(200).json({
                     status: true,
                     message: "success",
+                    creator: creator,
                     completed,
                     currentPage: page
                 })
@@ -133,6 +135,7 @@ const Services = {
                 return res.status(200).json({
                     status: true,
                     message: "success",
+                    creator: creator,
                     search,
                     query
                 })
@@ -176,6 +179,7 @@ const Services = {
                 return res.status(200).json({
                     status: true,
                     message: "success",
+                    creator: creator,
                     anime_list: datas
                 })
             }
@@ -238,6 +242,7 @@ const Services = {
                 return res.status(200).json({
                     status: true,
                     message: "success",
+                    creator: creator,
                     anime_detail,
                     episode_list,
                     endpoint
@@ -413,6 +418,7 @@ const Services = {
                 return res.status(200).json({
                     status: true,
                     message: 'success',
+                    creator: creator,
                     genres
                 })
             }
@@ -465,6 +471,7 @@ const Services = {
                 return res.status(200).json({
                     status: true,
                     message: "success",
+                    creator: creator,
                     genreAnime
                 })
             }
